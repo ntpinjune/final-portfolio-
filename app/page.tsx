@@ -5,7 +5,7 @@ export default function Home() {
         <img
           src="/profile.png"
           alt="Nolan"
-          className="w-50 h-60 rounded-xl shadow-lg object-cover shrink-0"
+          className="w-50 h-60 rounded-xl shadow-lg object-cover shrink-0 transition-transform duration-300 hover:scale-105 active:animate-shake cursor-pointer"
         />
         <div className="flex flex-col gap-4 max-w-md grow">
           <h1 className="font-figtree text-4xl md:text-5xl font-bold text-white">
@@ -22,14 +22,11 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-6 pt-4 text-sm font-medium text-gray-300">
             {/* Nav links */}
             <div className="flex gap-6">
-              <a href="#work" className="hover:text-white">
-                work
-              </a>
-              <a href="#projects" className="hover:text-white">
+              <a href="#projects" className="text-gray-300 hover:text-white">
                 projects
               </a>
-              <a href="#resume" className="hover:text-white">
-                resume
+              <a href="#Contact" className="hover:text-white">
+                contact
               </a>
             </div>
 
@@ -48,9 +45,6 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <i className="fab fa-linkedin text-xl hover:text-white" />
-              </a>
-              <a href="mailto:nolcocolt@gmail.com">
-                <i className="fas fa-envelope text-xl hover:text-white" />
               </a>
             </div>
           </div>
